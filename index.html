@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">JS Handson 3 - Iteration Statements</h1>
+    <div class="boxes">
+        <h2>Ques. 1 Find the number of digits</h2>
+        <div class="code">
+            <pre>
+                
+const Find_Digits = (N) => 
+{
+	 var quotient =N; 
+	 var remainder =0; 
+	 var tempNum = N; 
+	 var count =0 ;
+	 
+	 while (quotient >=1){ 
+	                         
+	   quotient =Math.floor( tempNum / 10); 
+	   tempNum = Math.floor(tempNum/10);
+	   count = count +1; 
+	  }
+	  return count;
+};
+
+
+            </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div class="boxes">
+        <h2>Ques. 2 Find the Fives.</h2>
+        <div class="code">
+            <pre>
+                
+const Find_Five = (N) => 
+{
+	 var remainder = N; // 345654
+	 var tempRemainder = 0 ;
+	 //var tempQuotient = N;
+	 var count = 0; 0
+	 while (remainder > 0){
+	   
+	   tempRemainder = remainder % 10 // 4
+	   
+	   
+	   if (tempRemainder === 5){
+	     count = count +1;
+	   }
+	   
+	   remainder= Math.floor(remainder / 10);
+	   
+	 }
+	 return count;
+};
+            </pre>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+    
+
+    <div class="boxes">
+        <h2>Ques. 3.  Find Sum</h2>
+        <div class="code">
+            <pre>
+const findSum = (n) => {
+  var sum =0
+    for (let v=1; v <= n ; v+=1)
+    {
+        if (v % 2 === 0)
+          {
+            sum=sum+v;
+            
+          }
+  }
+  return sum;
+};
+
+            </pre>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+
+
+    <div class="boxes">
+        <h2>Ques. 4.  Find the sum of the digits of a given number.</h2>
+        <div class="code">
+            <pre>
+const Number_Sum = (N) => 
+{
+	var temp =N;
+	 var sum =0;
+	 var remainder=0
+	 while (temp > 0){
+	   remainder = temp % 10;
+	   temp = Math.floor(temp / 10);
+	   sum =sum +remainder;
+	  }
+	 return sum;
+};
+            </pre>
+        </div>
+    </div>
+    
+
+    <br>
+    <hr>
+    <br>
+
+    
+    <div class="boxes">
+        <h2>Ques. 5. Print the Odds.</h2>
+        <div class="code">
+            <pre>
+                
+const Print_Odd = (N) => 
+{ 
+   console.log(2)
+	 for (let i = 3 ; i <= N ;i=i+2)
+	 {
+	   
+	     console.log(i)
+	   
+	 }
+};
+           </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 6. Print the Pattern.</h2>
+        <div class="code">
+            <pre>const Print_pattern = (N) => 
+                {
+                  let str=''
+                  for (let i =1 ; i<=N ; i=i+1)
+                  {
+                    for (let j = 1 ; j<=i ; j =j+1)
+                    {
+                      str=str+'*';
+                     
+                    }
+                     console.log(str)
+                     str=''
+                  }
+                 
+                };
+                            </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    
+    <div class="boxes">
+        <h2>Ques.7 . Print Numbers</h2>
+        <div class="code">
+            <pre>const printNumbers = (n) => {
+    
+                for(let v=1 ; v<=n ;v=v+1){
+                  console.log(v)
+                }
+                
+              }
+                            </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 8 . Print the Table</h2>
+        <div class="code">
+            <pre>const Print_Table = (N) => 
+                {
+                      var prod =0 ;
+                    for ( let v = 1 ; v <=10 ; v=v+1)
+                
+                    {
+                      prod= N*v;
+                      console.log(N + " * " + v + " = " + prod)
+                      
+                    }
+                }
+                
+                            </pre>
+        </div>
+    </div>
+</body>
+</html>
