@@ -168,10 +168,10 @@ const Print_Odd = (N) =>
                       str=str+'*';
                      
                     }
-                     console.log(str)
-                     str=''
+                    
+                     str += '\n';
                   }
-                 
+                  console.log(str)
                 };
                             </pre>
         </div>
@@ -206,7 +206,7 @@ const Print_Odd = (N) =>
         <div class="code">
             <pre>const Print_Table = (N) => 
                 {
-                      var prod =0 ;
+                    var prod =0 ;
                     for ( let v = 1 ; v <=10 ; v=v+1)
                 
                     {
@@ -217,6 +217,36 @@ const Print_Odd = (N) =>
                 }
                 
                             </pre>
+                        </div>
+                    </div>
+<hr> <br>
+                  
+<div class="boxes">
+  <h2>Ques. 9 . Check whether a Number is a prime or not.</h2>
+  <div class="code">
+<pre>
+    
+const Prime_Check = (N) => 
+{
+	 
+  let count=0;
+   for (let i=1;i<=N;i++)
+  {
+    if (N%i===0)
+    {
+        count=count+1;
+    }
+  }
+  if(count===2)
+  {
+    return("YES");
+  }
+  else
+  {
+    return("NO");
+  }
+};
+              </pre>
         </div>
     </div>
 </body>
